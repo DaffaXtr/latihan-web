@@ -1,0 +1,422 @@
+/* Reset CSS untuk menghapus margin dan padding default */
+/* CSS untuk footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* CSS untuk elemen .meme */
+.meme {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8); /* Warna latar belakang dengan transparansi */
+    border-radius: 5px; /* Menggunakan border-radius untuk sudut yang lebih lembut */
+}
+
+.social-media-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.social-media-icons li {
+    margin: 0 15px;
+}
+
+.social-media-icons a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.social-media-icons a:hover {
+    color: #007bff;
+}
+
+#description{
+    margin: 0;
+    display: block;
+    text-align: center;
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    /* top: 60%; */
+    /* left: 8%; */
+}
+
+.content h2 h3 h5 h7{
+    left: 50%;
+}
+
+h7{
+    color: rgb(0, 0, 0);
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+
+h4{
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: rgb(61, 61, 61);
+    color: rgb(255, 255, 255);
+}
+
+.logo {
+    color: rgb(0, 0, 0);
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.toggle-button {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.toggle-button span {
+    width: 30px;
+    height: 3px;
+    background-color: rgb(0, 0, 0);
+    margin: 3px 0;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        background-color: rgb(34, 34, 34);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+}
+
+
+
+
+
+
+body, h1, p, ul, li, form {
+    margin: 0;
+    padding: 0;
+}
+
+/* style.css */
+
+body {
+    background: linear-gradient(to right, #0800ff, #00ccff); /* Gradient horizontal dari kiri ke kanan */
+    /* Anda dapat mengganti warna dan arah gradient sesuai kebutuhan */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* height: 100vh; */
+}
+
+
+/* Header style */
+h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-top: 20px;
+}
+
+/* Navigation style */
+nav ul {
+    list-style: none;
+    background-color: rgb(54, 54, 54);
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+/* Video style (gantilah dengan properti yang sesuai) */
+video {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+/* Link style */
+a#link {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+    color: rgb(98, 93, 93);
+    text-decoration: none;
+}
+
+/* Form style */
+form {
+    text-align: center;
+    margin-top: 20px;
+    padding: 0 30%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+label[for="check"] {
+    display: block;
+    text-align: center;
+}
+
+input[type="checkbox"] {
+    margin: 10px auto;
+}
+
+button#submit-form {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Warning style */
+#warning {
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+/*SOSIAL MEDIA
+
+/* style.css */
+
+/* Reset style untuk menghilangkan margin dan padding bawaan */
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS untuk styling footer */
+
+.social-media-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Mengatur agar ikon sosial media sejajar di tengah */
+}
+
+.social-media-icons li {
+    margin: 10px; /* Jarak antara ikon sosial media */
+}
+
+.social-media-icons a {
+    text-decoration: none;
+    color: rgb(170, 19, 19);
+    font-size: 24px; /* Ukuran ikon */
+}
+
+
+
+
+
+/* CSS untuk ikon Facebook */
+.facebook-icon a {
+    text-decoration: none;
+    color: #172fca; /* Warna biru untuk Facebook */
+    font-size: 24px;
+}
+
+/* Hover efek pada ikon Facebook */
+.facebook-icon a:hover {
+    color: #1e00ff; /* Warna biru tua saat dihover */
+}
+
+
+/* CSS untuk ikon Instagram */
+.instagram-icon a {
+    text-decoration: none;
+    color: #ee00ff; /* Warna merah muda (pink) untuk Instagram */
+    font-size: 24px;
+}
+
+/* Hover efek pada ikon Instagram */
+.instagram-icon a:hover {
+    color: #d900ff; /* Warna merah tua saat dihover */
+}
+
+
+/* CSS untuk ikon YouTube */
+.youtube-icon a {
+    text-decoration: none;
+    color: hsl(0, 100%, 50%); /* Warna merah untuk YouTube */
+    font-size: 24px;
+}
+
+/* Hover efek pada ikon YouTube */
+.youtube-icon a:hover {
+    color: #ff0000; /* Warna oranye saat dihover */
+}
+
+
+/* CSS untuk kontainer sosial media */
+.social-media {
+    display: flex; /* Menggunakan flexbox untuk menyusun tautan sosial media secara horizontal */
+    justify-content: space-around; /* Menyusun tautan secara merata dalam kontainer */
+    margin-top: 10px;
+}
+
+/* CSS untuk tautan sosial media */
+.social-link {
+    text-align: center;
+}
+
+.social-link a {
+    text-decoration: none;
+    color: #fff; /* Warna teks tautan */
+    display: block;
+    font-weight: bold;
+    margin: 0 10px; /* Spasi antara tautan */
+}
+
+.social-link i {
+    font-size: 24px; /* Ukuran ikon */
+}
+
+
+
+
+/* CSS untuk menu navigasi */
+nav {
+    background-color: #333; /* Warna latar belakang navigasi */
+    color: rgb(255, 255, 255); /* Warna teks */
+    padding: 10px 0; /* Padding atas dan bawah */
+    text-align: center; /* Pusatkan teks */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 10px 0; /* Spasi antara setiap elemen menu */
+    text-align: left; /* Posisikan teks kiri */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff; /* Warna teks tautan */
+    font-weight: bold;
+}
+
+/* Gaya separator antara tautan dan teks */
+nav ul li::after {
+    content: '-'; /* Tambahkan simbol '=' setelah tautan */
+    margin-left: 8px;
+    margin-right: 8px;
+    color: #fff; /* Warna separator */
+}
+
+/* Hover efek pada tautan */
+nav ul li a:hover {
+    text-decoration: underline; /* Garis bawah pada tautan saat dihover */
+}
+
+
+/* CSS untuk memusatkan teks di tengah halaman */
+.center-text {
+    text-align: center; /* Memusatkan teks horizontal */
+    display: flex;
+    justify-content: center; /* Memusatkan teks vertical */
+    align-items: center;
+    height: 100vh; /* Menggunakan tinggi viewport untuk membuat teks di tengah halaman */
+}
+
+
+/* CSS untuk memusatkan teks di tengah halaman */
+.center-text {
+    text-align: center; /* Memusatkan teks horizontal */
+    display: flex;
+    justify-content: center; /* Memusatkan teks vertical */
+    align-items: center;
+    height: 20vh; /* Menggunakan tinggi viewport untuk membuat teks di tengah halaman */
+}
+
+input{
+    width: 100%;
+}

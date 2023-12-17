@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    min-height: 100vh;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    background: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7dUp54LGWAhgpkl8qnJpontqk-2-ZevBIo8VxfsoXe4jOOtNvZTvtb8cRB6NxWkwJsnNkcJc-2fDQnVqD3hy87Gi0_9XthyvcVw_9HSlE06Do6fpafenmzSw0sRwosrN_lgoocEFoh8xK5bqZsdjnys3KiPbWQQClRylDd7LHDeJgUKizNvzlX0vluw/s1920/Recomendation%20Aesthetic%20Minimalistic%20Wallpaper%20Desktop%20Background%20%2010.jpg)no-repeat;
+    /* background-size: cover; */
+    /* background-position: center; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* text-align: center; */
+}
+
+header nav{
+    background-color: #61677A;
+    position: fixed;
+    /* top: 0; */
+    /* left: 0; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo{
+    margin: 10px 80px;
+    width: 70px;
+}
+
+nav .logo h1{
+    color: white;
+    font-weight: bolder;
+    font-size: 30px;
+}

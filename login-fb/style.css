@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    display: flex;
+    margin-top: 38px;
+    /* align-items: center; */
+    justify-content: center;
+    min-height: 100vh;
+    background: #f0f2f5;
+}
+
+.utama{
+    text-align: center;
+    
+}
+
+.utama img{
+    width: 240px;
+}
+
+.utama .form{
+    background: #fff;
+    width: 396px;
+    margin: auto;
+    padding: 0 0 14px 0;
+    border: 1px solid #dddfe2;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+    
+}
+
+.utama .form .login{
+    display: block;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 24px 0 16px 0;
+}
+
+.utama .form .input{
+    display: block;
+    width: 100%;
+    height: 62px;
+    /* margin: 0 16px; */
+    padding: 6px 0;
+    /* direction: ltr; */
+    /* line-height: 1.34; */
+    
+}
+.input input{
+    justify-content: center;
+    border-radius: 6px;
+    border: 0.8px solid #dddfe2;
+    outline: none;
+    font-size: 17px;
+    padding: 14px 16px;
+    width: 364px;
+    line-height: 16px;
+    vertical-align: middle;
+    color: #1d2129;
+}
+
+.btn-masuk{
+    padding: 6px 0;
+    font-size: 12px;
+    font-weight: bolder;
+    display: block;
+}
+
+.btn-masuk button{
+    background-color: #1877f2;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 20px;
+    width: 364px;
+    line-height: 48px;
+    border: none;
+    border-radius: 6px;
+    padding: 0 16px;
+}
+
+.btn-masuk button:hover{
+    background-color: #186ede;
+    cursor: pointer;
+    transition-duration: 200ms;
+}
+
+.utama .forget{
+    padding: 10px 0 2px;
+    font-size: 14px;
+    font-weight: 100;
+}
+.forget a{
+    text-decoration: none;
+    color: #1877f2;
+}
+
+.forget a:hover{
+    text-decoration: underline;
+}
+
+.utama .atau{
+    font-size: 12px;
+    width: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+    color: #96999e;
+    display: inline-block;
+    position: relative;
+}
+
+.utama .btn-new{
+    padding: 0 0;
+}
+
+.btn-new button{
+    border: none;
+    border-radius: 6px;
+    line-height: 48px;
+    padding: 0 16px;
+    font-size: 17px;
+    color: white;
+    background-color: #42b72a;
+    font-weight: bolder;
+}
+
+.btn-new button:hover{
+    cursor: pointer;
+    background-color: #3ba526;
+    transition-duration: 200ms;
+}

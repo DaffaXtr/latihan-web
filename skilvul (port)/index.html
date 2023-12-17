@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" type="text/css" href="style.css" /> -->
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&family=Poppins:wght@400;500&family=Roboto&display=swap" rel="stylesheet">
+    <style>*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    body{
+        width: 100%;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: #fff;
+    
+    }
+    
+    .utama{
+        width: 100%;
+        height: 50px;
+        display: block;
+    }
+    
+    .utama .navbar{
+        background-color: #232323;
+        border-bottom: 3px solid #FFC60B;
+        width: 100%;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .utama .navbar nav{
+        padding: 0 20px;
+    }
+    
+    .utama .navbar .logo{
+        margin-left: 50px;
+        padding: 0 20px;
+        text-decoration: none;
+        font-weight: bolder;
+        font-size: 25px;
+        color: white;
+        transition: 300ms;
+    }
+    
+    .utama .navbar .logo span{
+        color: #FFC60B;
+        transition: 300ms;
+    }
+    
+    .utama .navbar nav a{
+        position: relative;
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+        margin-right: 50px;
+        font-weight: bolder;
+        transition: 300ms;
+    }
+    
+    .utama .navbar nav a::before{
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: #FFC60B;
+        transition: 300ms;
+    }
+    
+    .utama .navbar nav a:hover::before{
+        width: 100%;
+    }
+    
+    .utama .navbar nav a:hover{
+        color: #FFC60B;
+    }
+    
+    .content{
+        top: 0;
+        background-color: #232323;
+        background-size: cover;
+        color: white;
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        text-align: left;
+        justify-content: space-between;
+        font-size: 16px;
+        padding: 0 80px;
+    }
+    
+    .content img{
+        width: 350px;
+        height: 20%;
+        margin: 50px;
+    }
+    
+    .content img:hover{
+        cursor: pointer;
+    }
+    
+    .content .desk{
+        width: 700px;
+        display: block;
+        text-align: left;
+        justify-content: center;
+        font-size: 20px;
+        left: 0;
+    }
+    
+    .content .desk p{
+        font-size: 14px;
+    }
+    
+    .content .desk h1{
+        color: #FFC60B;
+        font-size: 60px;
+    }
+    
+    .content .desk #link{
+        /* background-color: transparent; */
+        /* border: 0.5px solid #FFC60B; */
+        border-bottom: 1px solid #fff;
+        font-size: 14px;
+        margin-left: 30px;
+        text-decoration: none;
+        color: #FFF;
+    }
+    
+    .content .desk button{
+        background-color: #FFC60B;
+        border: 0.5px solid transparent;
+        border-radius: 5px;
+        height: 35px;
+        width: 100px;
+        transition: 200ms;
+    }
+    
+    .content .desk button:hover{
+        cursor: pointer;
+        background-color: transparent;
+        border: 0.5px solid #FFC60B;
+        color: #fff;
+    }
+    
+    .form-utama{
+        width: 100%;
+        padding: 50px 300px;
+        background-color: #232323;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .form-utama #myForm{
+        background-color: #232323;
+        width: 500px;
+        background: transparent;
+        backdrop-filter: blur(20px);
+        box-shadow: 0 0 10px rgb(255, 255, 255, 0.2);
+        color: #fff;
+        border: 2px solid #FFC60B;
+        border-radius: 20px;
+        padding: 30px 40px;
+        margin: 50px;
+    }
+    
+    .form-utama #myForm input{
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        border: none;
+        outline: none;
+        border: 2px solid #FFC60B;
+        border-radius: 40px;
+        padding: 20px 45px 20px 20px;
+        margin-bottom: 10px;
+        color: #fff;
+    }
+    
+    .form-utama .cek{
+        margin: 5px;
+    }
+    
+    .form-utama #myForm button{
+        /* color: #fff; */
+        background-color: #FFC60B;
+        width: 30%;
+        height: 45px;
+        border: none;
+        border-radius: 45px;
+        outline: none;
+        /* box-shadow: 0 0 10px rgb(255, 253, 253); */
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: bolder;
+        transition-duration: 200ms;
+    }
+    
+    footer{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        background-color: black;
+        color: #fff;
+        height: 30px;
+        font-size: 12px;;
+    }
+    
+    .portfolio{
+        background-color: #e3e3e3;
+        width: 100%;
+        height: 500px;
+        /* padding: 0 100px; */
+        /* margin-top: 20px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .portfolio .port-card{
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-right: 50px;
+    
+    }
+    
+    .portfolio .card{
+        width: 400px;
+        background-color: #fff;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    .portfolio .card img{
+        width: 100%;
+        height: 70%;
+        border: none;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        /* border-radius: 10px; */
+    }
+    
+    .port-card .container{
+        display: block;
+        text-align: left;
+        /* padding: 10px 10px; */
+        margin: 3px 10px;
+    }</style>
+</head>
+<body>
+    <div class="utama">
+        <header class="navbar">
+            <a href="#" class="logo">Daffa<span>Sujianto</span></a>
+            <nav class="nav">
+                <a href="#">Home</a>
+                <a href="#">Tentang</a>
+                <a href="#">Menu</a>
+                <a href="#">Produk</a>
+                <a href="#">Kontak</a>
+              </nav>
+        </header>
+    </div>
+
+    <main class="content">
+            <div class="desk">
+                <h1>DAFFA <span>EKA </span>SUJIANTO</h1>
+                <p id="description">Seorang programmer junior yang memulai dari nol, memiliki impian kuat untuk menjadi seorang profesional di bidang web development. Dengan tekad dan dedikasinya, ia berusaha belajar secara intensif untuk menguasai bahasa pemrograman, framework, dan teknologi terkini yang diperlukan untuk menciptakan website dan aplikasi web yang inovatif dan menginspirasi.</p><br>
+                <a href="https://web.whatsapp.com/send/?phone=6282152695572&text&type=phone_number&app_absent=0"><button type="button">Contact</button></a>
+                <a href="https://skilvul.com" id="link">Skilvul</a>
+            </div>
+            <div class="gambar">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiD7dK1gEA8muY--L5ChkNBSydbbal5YFxvAmMNXjerQRn5y5c9AmSP7iVp9uouK01DBp60l-TKotKFpP6VU47aCAUKe4gTsXAdehTxciaqTDXsthgLQXP1wjJCSCDvOm-RaoH2TZFrVIlOkTjpiZAaM79vG1hMEAKYPoM7pPCrSkTiin4aOOUhkgl9lwH0/s320/dapa2.png" alt="foto"/>
+            </div>     
+    </main>
+
+    <div class="portfolio">
+        <section>
+            <h1>Portfolio</h1>
+            <div class="port-card">
+                <div class="card">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnyVMZCplHbxdUQ-klcS8qGpcG_A5MqRp4nMKpL01Xsn5KVbaw8yCPWWYIWnouHdNvNuhA9qE4dwsDPgjkfjluOFx_EvSs98vV_hTJh3M9aj6u1JuXIXp18yhAlMkY6XBh-aLToRbK4lu0nGB-U-altnxZAjcM-b2tCihgJksPh-yns4EaJmslT2eFraxe/s320/62a05794648c4d6e0d010288_iot%205.jpeg" alt="Avatar">
+                    <div class="container">
+                      <h4><b>Proyek 1</b></h4> 
+                      <p>Membuat Produk Berbasis IoT</p> 
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQjYqLiKEw0XnIU_pX-UfQKhk1S9_SF2dCMKxUKgCIDIIIfu8NO8N1JELr_UIFq6dDUtryBWh9r03mb2AF2Nro3zVp8Vwet_jKDG4AbbK2XeHtbum3ss7j4k1PrXz-aXiP0azDC3mG2vOR0dek4_ESLMHjn2GxcauzCx9x_F6KPJCjZdj6bc3M-6LqyjLj/s320/1660315042269_11zon.jpeg" alt="Avatar">
+                    <div class="container">
+                      <h4><b>Proyek 2</b></h4> 
+                      <p>Membuat Design UI/UX Untuk Mobile App</p> 
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgnUAbULRx6JFCwS9xE_E1zGG7NGWW4s2hHqw2ZIbBXPJcGG45plCqfx-yDdR7XCyPfSNaTwkHizUEAx-3wGL_SdZGIqaMKg9HPYCYSjE5pgNOsfi5DeYr6QDZUJ94SXC6yw6-2fR5xw3ZRr-lgdgFXasAMcscJW7rN1ZEvuWyelzZ8vf1gKwBXRyxCPooK/s320/Colorful-background-website-landing-page-template-vector.jpg" alt="Avatar">
+                    <div class="container">
+                      <h4><b>Proyek 3</b></h4> 
+                      <p>Membuat Design Landing Page Untuk Web</p> 
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="form-utama">
+        <section>
+            <form id="myForm" action="">
+                <input type="text" id="name" placeholder="Masukkan Nama" required><br>
+                <input type="text" id="city" placeholder="Asal Kota" required><br>
+                <input type="email" id="email" placeholder="Masukkan Email" required><br>
+                <input type="number" id="zip-code" placeholder="Masukkan Nomor" required><br>
+    
+                <label id="check">Dengan ini saya menyatakan data yang diisi pada form ini adalah benar dan telah sesuai</label>
+                <input type="checkbox" id="status">
+                <button id="submit-form" type="submit">Submit</button>
+            </form>
+            
+            <div id="warning"></div>
+        </section>
+    </div>
+    
+    <footer>Copyright - Daffa-sujianto</footer>
+</body>
+</html>
